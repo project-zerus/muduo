@@ -28,6 +28,7 @@ cc_library(
         'inspect/Inspector.cc',
         'inspect/PerformanceInspector.cc',
         'inspect/ProcessInspector.cc',
+        'inspect/SystemInspector.cc',
     ],
     deps = [
         '//essence/muduo/muduo/base:base',
