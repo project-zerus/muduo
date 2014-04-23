@@ -2,6 +2,7 @@
 
 cc_library(
     name = 'base',
+    warning = 'no',
     srcs = [
         'AsyncLogging.cc',
         'Condition.cc',
