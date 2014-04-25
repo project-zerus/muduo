@@ -3,5 +3,6 @@ cc_library(
   deps = [
     '//essence/muduo/muduo/base:base',
     '//essence/muduo/muduo/net:net',
+    '//essence/muduo/muduo/net/protorpc:protorpc',
   ]
 )

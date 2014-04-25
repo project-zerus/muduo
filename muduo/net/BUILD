@@ -18,10 +18,6 @@ cc_library(
         'Timer.cc',
         'TimerQueue.cc',
 
-        'poller/DefaultPoller.cc',
-        'poller/EPollPoller.cc',
-        'poller/PollPoller.cc',
-
         'http/HttpResponse.cc',
         'http/HttpServer.cc',
 
@@ -29,8 +25,15 @@ cc_library(
         'inspect/PerformanceInspector.cc',
         'inspect/ProcessInspector.cc',
         'inspect/SystemInspector.cc',
+
+        'poller/DefaultPoller.cc',
+        'poller/EPollPoller.cc',
+        'poller/PollPoller.cc',
+
+        'protobuf/ProtobufCodecLite.cc',
     ],
     deps = [
         '//essence/muduo/muduo/base:base',
+        '//thirdparty/protobuf:protobuf',
     ]
 )
