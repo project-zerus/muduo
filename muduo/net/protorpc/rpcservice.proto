@@ -7,7 +7,7 @@ option py_generic_services = true;
 option java_package = "com.chenshuo.muduo.protorpc";
 option java_outer_classname = "RpcServiceProto";
 
-//import "google/protobuf/descriptor.proto";
+import "google/protobuf/descriptor.proto";
 import "essence/muduo/muduo/net/protorpc/rpc.proto";
 
 message ListRpcRequest
