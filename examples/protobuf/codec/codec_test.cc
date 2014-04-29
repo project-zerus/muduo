@@ -3,7 +3,7 @@
 #include <examples/protobuf/codec/query.pb.h>
 
 #include <stdio.h>
-#include <zlib.h>  // adler32
+#include "thirdparty/zlib/zlib.h"  // adler32
 
 using namespace muduo;
 using namespace muduo::net;
