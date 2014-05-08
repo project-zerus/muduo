@@ -13,6 +13,8 @@ class PubSubClient : boost::noncopyable
 {
  public:
   typedef boost::function<void (PubSubClient*)> ConnectionCallback;
+  typedef boost::function<void (PubSubClient*)> WriteCompleteCallback;
+
   typedef boost::function<void (const string& topic,
                                 const string& content,
                                 Timestamp)> SubscribeCallback;
@@ -27,12 +29,16 @@ class PubSubClient : boost::noncopyable
   void setConnectionCallback(const ConnectionCallback& cb)
   { connectionCallback_ = cb; }
 
+  void setWriteCompleteCallback(const WriteCompleteCallback& cb)
+  { writeCompleteCallback_ = cb; }
+
   bool subscribe(const string& topic, const SubscribeCallback& cb);
   void unsubscribe(const string& topic);
   bool publish(const string& topic, const string& content);
 
  private:
   void onConnection(const muduo::net::TcpConnectionPtr& conn);
+  void onWriteComplete(const muduo::net::TcpConnectionPtr& conn);
   void onMessage(const muduo::net::TcpConnectionPtr& conn,
                  muduo::net::Buffer* buf,
                  muduo::Timestamp receiveTime);
@@ -41,6 +47,7 @@ class PubSubClient : boost::noncopyable
   muduo::net::TcpClient client_;
   muduo::net::TcpConnectionPtr conn_;
   ConnectionCallback connectionCallback_;
+  WriteCompleteCallback writeCompleteCallback_;
   SubscribeCallback subscribeCallback_;
 };
 }

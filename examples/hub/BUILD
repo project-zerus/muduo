@@ -1,35 +1,51 @@
 cc_library(
-    name = 'pubsub',
-    srcs = [
-        'codec.cc',
-        'hub.cc',
-        'pub.cc',
-        'pubsub.cc',
-        'sub.cc',
-    ],
-    deps = '//essence/muduo:muduo'
+  name = 'pubsub',
+  extra_cppflags = '-std=c++0x',
+  srcs = [
+    'codec.cc',
+    'hub.cc',
+    'pub.cc',
+    'pubsub.cc',
+    'sub.cc',
+  ],
+  deps = '//essence/muduo:muduo'
 )
 
 cc_binary(
-    name = 'pub',
-    srcs = [
-        'pub.cc',
-    ],
-    deps = ':pubsub'
+  name = 'pub',
+  extra_cppflags = '-std=c++0x',
+  srcs = [
+    'pub.cc',
+  ],
+  deps = ':pubsub'
 )
 
 cc_binary(
-    name = 'sub',
-    srcs = [
-        'sub.cc',
-    ],
-    deps = ':pubsub'
+  name = 'sub',
+  extra_cppflags = '-std=c++0x',
+  srcs = [
+    'sub.cc',
+  ],
+  deps = ':pubsub'
 )
 
 cc_binary(
-    name = 'hub',
-    srcs = [
-        'hub.cc',
-    ],
-    deps = ':pubsub'
+  name = 'stress_test',
+  extra_cppflags = '-std=c++0x',
+  srcs = [
+    'stress_test.cc',
+  ],
+  deps = [
+    ':pubsub',
+    '//toft/base/string:string',
+  ],
+)
+
+cc_binary(
+  name = 'hub',
+  extra_cppflags = '-std=c++0x',
+  srcs = [
+    'hub.cc',
+  ],
+  deps = ':pubsub'
 )

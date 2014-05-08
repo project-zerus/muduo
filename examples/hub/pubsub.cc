@@ -17,6 +17,8 @@ PubSubClient::PubSubClient(EventLoop* loop,
       boost::bind(&PubSubClient::onConnection, this, _1));
   client_.setMessageCallback(
       boost::bind(&PubSubClient::onMessage, this, _1, _2, _3));
+  client_.setWriteCompleteCallback(
+    boost::bind(&PubSubClient::onWriteComplete, this, _1));
 }
 
 void PubSubClient::start()
@@ -68,6 +70,14 @@ void PubSubClient::onConnection(const TcpConnectionPtr& conn)
   if (connectionCallback_)
   {
     connectionCallback_(this);
+  }
+}
+
+void PubSubClient::onWriteComplete(const TcpConnectionPtr& conn)
+{
+  if (writeCompleteCallback_)
+  {
+    writeCompleteCallback_(this);
   }
 }
 
