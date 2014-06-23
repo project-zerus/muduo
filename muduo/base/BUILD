@@ -20,6 +20,6 @@ cc_library(
   ],
   deps = [
     '#pthread',
+    '#rt',
   ]
 )
-
