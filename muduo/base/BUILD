@@ -21,5 +21,6 @@ cc_library(
   deps = [
     '#pthread',
     '#rt',
+    '//boost:boost',
   ]
 )
