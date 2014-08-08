@@ -15,7 +15,7 @@
 #include <muduo/net/protorpc/google-inl.h>
 
 #include <google/protobuf/message.h>
-#include "thirdparty/zlib/zlib.h"
+#include "zlib.h"
 
 using namespace muduo;
 using namespace muduo::net;

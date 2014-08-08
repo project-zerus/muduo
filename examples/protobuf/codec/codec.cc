@@ -14,7 +14,7 @@
 
 #include <google/protobuf/descriptor.h>
 
-#include "thirdparty/zlib/zlib.h"  // adler32
+#include "zlib.h"  // adler32
 
 using namespace muduo;
 using namespace muduo::net;

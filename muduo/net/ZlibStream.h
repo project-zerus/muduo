@@ -3,7 +3,7 @@
 #include <muduo/net/Buffer.h>
 #include <boost/noncopyable.hpp>
 #pragma GCC diagnostic ignored "-Wold-style-cast"
-#include "thirdparty/zlib/zlib.h"
+#include "zlib.h"
 
 namespace muduo
 {

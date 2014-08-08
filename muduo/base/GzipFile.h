@@ -3,7 +3,7 @@
 #include <muduo/base/StringPiece.h>
 #include <boost/noncopyable.hpp>
 
-#include "thirdparty/zlib/zlib.h"
+#include "zlib.h"
 
 namespace muduo
 {
