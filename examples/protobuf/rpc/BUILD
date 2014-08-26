@@ -10,7 +10,7 @@ cc_binary(
     ],
     deps = [
         ':sudoku_proto',
-        '//essence/muduo:muduo',
+        '//muduo:muduo',
     ]
 )
 
@@ -21,6 +21,6 @@ cc_binary(
     ],
     deps = [
         ':sudoku_proto',
-        '//essence/muduo:muduo',
+        '//muduo:muduo',
     ]
 )

@@ -3,7 +3,7 @@ cc_binary(
   srcs = [
     'client.cc',
   ],
-  deps = '//essence/muduo:muduo',
+  deps = '//muduo:muduo',
 )
 
 cc_binary(
@@ -11,5 +11,5 @@ cc_binary(
   srcs = [
     'server.cc',
   ],
-  deps = '//essence/muduo:muduo',
+  deps = '//muduo:muduo',
 )

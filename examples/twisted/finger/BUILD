@@ -3,7 +3,7 @@ cc_binary(
   srcs = [
     'finger01.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -11,7 +11,7 @@ cc_binary(
   srcs = [
     'finger02.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -19,7 +19,7 @@ cc_binary(
   srcs = [
     'finger03.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -27,7 +27,7 @@ cc_binary(
   srcs = [
     'finger04.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -35,7 +35,7 @@ cc_binary(
   srcs = [
     'finger05.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -43,7 +43,7 @@ cc_binary(
   srcs = [
     'finger06.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -51,6 +51,6 @@ cc_binary(
   srcs = [
     'finger07.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 

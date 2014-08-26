@@ -8,7 +8,7 @@ cc_library(
     'pubsub.cc',
     'sub.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(

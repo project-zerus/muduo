@@ -4,7 +4,7 @@ cc_binary(
     'echo.cc',
     'main.cc',
   ],
-  deps = '//essence/muduo:muduo',
+  deps = '//muduo:muduo',
 )
 
 cc_binary(
@@ -12,5 +12,5 @@ cc_binary(
   srcs = [
     'sortedlist.cc',
   ],
-  deps = '//essence/muduo:muduo',
+  deps = '//muduo:muduo',
 )

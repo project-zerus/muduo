@@ -3,7 +3,7 @@ cc_library(
   srcs = [
     'discard/discard.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -19,7 +19,7 @@ cc_library(
   srcs = [
     'echo/echo.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -35,7 +35,7 @@ cc_library(
   srcs = [
     'daytime/daytime.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -51,7 +51,7 @@ cc_library(
   srcs = [
     'time/time.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(
@@ -75,7 +75,7 @@ cc_library(
   srcs = [
     'chargen/chargen.cc',
   ],
-  deps = '//essence/muduo:muduo'
+  deps = '//muduo:muduo'
 )
 
 cc_binary(

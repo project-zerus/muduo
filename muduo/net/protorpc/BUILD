@@ -16,7 +16,7 @@ cc_library(
   ],
   deps = [
     ':protorpc_proto',
-    '//essence/muduo/muduo/net:net',
+    '//muduo/muduo/net:net',
   ]
 )
 

@@ -1,7 +1,6 @@
 cc_library(
   name = 'base',
   warning = 'no',
-  extra_cppflags = '-std=c++0x',
   srcs = [
     'AsyncLogging.cc',
     'Condition.cc',

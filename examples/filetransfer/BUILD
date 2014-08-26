@@ -3,7 +3,7 @@ cc_binary(
   srcs = [
     'download.cc',
   ],
-  deps = '//essence/muduo:muduo',
+  deps = '//muduo:muduo',
 )
 
 cc_binary(
@@ -11,7 +11,7 @@ cc_binary(
   srcs = [
     'download2.cc',
   ],
-  deps = '//essence/muduo:muduo',
+  deps = '//muduo:muduo',
 )
 
 cc_binary(
@@ -19,5 +19,5 @@ cc_binary(
   srcs = [
     'download3.cc',
   ],
-  deps = '//essence/muduo:muduo',
+  deps = '//muduo:muduo',
 )

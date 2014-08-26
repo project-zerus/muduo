@@ -1,6 +1,5 @@
 cc_library(
   name = 'net',
-  extra_cppflags = '-std=c++0x',
   srcs = [
     'Acceptor.cc',
     'Buffer.cc',
@@ -34,7 +33,7 @@ cc_library(
     'protobuf/ProtobufCodecLite.cc',
   ],
   deps = [
-    '//essence/muduo/muduo/base:base',
+    '//muduo/muduo/base:base',
     '//thirdparty/protobuf:protobuf',
   ]
 )
