@@ -11,6 +11,7 @@ cc_library(
   export_incs = '.',
   extra_cppflags = [
     '-Wno-vla',
+    '-Wno-format-nonliteral',
   ],
   srcs = [
     'muduo/base/AsyncLogging.cc',
